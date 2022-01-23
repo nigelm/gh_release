@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "gh_release"
+version = "0.1.0"
+description = ""
+authors = ["Nigel Metheringham <nigel.metheringham@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.6.2,<4.0"
+click = "^8.0.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+gh_release = "gh_release.cli:gh_release"
