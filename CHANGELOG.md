@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!--next-version-placeholder-->
 
+## v0.1.1 (2022-01-23)
+### Fix
+* Hash the action naming ([`199115c`](https://github.com/nigelm/gh_release/commit/199115cf82f8f1bff58985c7be64f3abb30131f7))
+
 ## v0.1.0 (2022-01-23)
 ### Feature
 * Rework for internal releaser ([`91a0e64`](https://github.com/nigelm/gh_release/commit/91a0e6459d723a6bfccd72540c545dbc47680eb5))
