@@ -6,15 +6,59 @@ jobs:
     concurrency: release
 
     steps:
-    - uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
+      #----------------------------------------------
+      # check-out repo and set-up python
+      #----------------------------------------------
+      - name: Check out repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Set up python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.10.2
+      #----------------------------------------------
+      # install & configure poetry in cache
+      #----------------------------------------------
+      - name: Load cached Poetry installation
+        uses: actions/cache@v2
+        with:
+          path: ~/.local  # the path depends on the OS
+          key: poetry-0  # increment to reset cache
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+        with:
+          version: 1.1.12
+          virtualenvs-create: true
+      #----------------------------------------------
+      #       load cached venv if cache exists
+      #----------------------------------------------
+      - name: Load cached venv
+        id: cached-poetry-dependencies
+        uses: actions/cache@v2
+        with:
+          path: .venv
+          key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('**/poetry.lock') }}
+      #----------------------------------------------
+      # install/activate dependencies
+      #----------------------------------------------
+      - name: Install dependencies
+        run: poetry install --no-interaction --no-root
+      #----------------------------------------------
+      # ensure dist dir in place
+      #----------------------------------------------
+      - name: Ensure dist in place
+        run: mkdir dist
 
-    - name: Python Semantic Release
-      uses: relekang/python-semantic-release@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        repository_username: __token__
-        repository_password: ${{ secrets.PYPI_TOKEN }}
+      #----------------------------------------------
+      # release
+      #----------------------------------------------
+      - name: Ensure dist in place
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run:
+          - git config user.name github-actions
+          - git config user.email github-actions@github.com
+          - poetry run semantic-release publish
 
 # end

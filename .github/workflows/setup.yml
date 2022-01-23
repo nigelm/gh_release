@@ -1,4 +1,4 @@
-name: Rusable Setup for most tasks
+name: Reusable Setup for most tasks
 on:
   workflow_call:
 
