@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!--next-version-placeholder-->
 
+## v0.1.0 (2022-01-23)
+### Feature
+* Rework for internal releaser ([`91a0e64`](https://github.com/nigelm/gh_release/commit/91a0e6459d723a6bfccd72540c545dbc47680eb5))
+* Rework to use our python-semantic-release ([`709d449`](https://github.com/nigelm/gh_release/commit/709d4491e903f1cff0b2bad1ccf9c4375f101897))
+
 ## v0.0.4 (2022-01-23)
 ### Fix
 * Force dist to exist for semantic release ([`5b165c7`](https://github.com/nigelm/gh_release/commit/5b165c7b0f9f37821506b909ae870d2cdb5f2911))
