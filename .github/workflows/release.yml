@@ -2,7 +2,7 @@ name: Overall Release Process
 on: workflow_dispatch
 jobs:
   release:
-    needs: test
+    #needs: test
     runs-on: ubuntu-latest
     steps:
       #----------------------------------------------
