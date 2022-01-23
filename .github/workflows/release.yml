@@ -2,7 +2,8 @@ jobs:
   release:
     needs: test
     runs-on: ubuntu-latest
-    on: workflow_dispatch
+    on:
+      workflow_dispatch:
     steps:
       #----------------------------------------------
       # check-out repo and set-up python
