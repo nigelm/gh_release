@@ -53,7 +53,7 @@ jobs:
       #----------------------------------------------
       # release
       #----------------------------------------------
-      - name: Ensure dist in place
+      - name: Semantic Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
