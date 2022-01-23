@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!--next-version-placeholder-->
 
+## v0.1.2 (2022-01-23)
+### Fix
+* Fix github token name ([`837fc2f`](https://github.com/nigelm/gh_release/commit/837fc2fc114d52ea667050bae0ca6a52836dd278))
+* Move virtenvs into project for caching ([`fe1d8e5`](https://github.com/nigelm/gh_release/commit/fe1d8e5910d617c4839ad0ace50944f53a9bacb9))
+
 ## v0.1.1 (2022-01-23)
 ### Fix
 * Hash the action naming ([`199115c`](https://github.com/nigelm/gh_release/commit/199115cf82f8f1bff58985c7be64f3abb30131f7))
