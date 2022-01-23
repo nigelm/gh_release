@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!--next-version-placeholder-->
 
+## v0.0.4 (2022-01-23)
+### Fix
+* Force dist to exist for semantic release ([`5b165c7`](https://github.com/nigelm/gh_release/commit/5b165c7b0f9f37821506b909ae870d2cdb5f2911))
+
 ## v0.0.3 (2022-01-23)
 ### Fix
 * Do not upload release to repository ([`c5fc0dc`](https://github.com/nigelm/gh_release/commit/c5fc0dc2a0e94e8356d8d4a8276a54e5db25e993))
