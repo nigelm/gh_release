@@ -2,7 +2,7 @@ jobs:
   release:
     needs: test
     runs-on: ubuntu-latest
-    on: workflow_dispatch
+    #on: workflow_dispatch
     uses: nigelm/gh_release/.github/workflows/setup.yml@main
     steps:
       #----------------------------------------------
