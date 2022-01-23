@@ -10,6 +10,7 @@ click = "^8.0.3"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
+python-semantic-release = "^7.23.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
@@ -17,3 +18,17 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 gh_release = "gh_release.cli:gh_release"
+
+[tool.semantic_release]
+branch = "master"
+version_toml = [ "pyproject.toml:tool.poetry.version" ]
+version_pattern = [
+    'README.md:Version: `(\d+\.\d+\.\d+)`',
+    'gh_release/__init__.py:__version__ = "(\d+\.\d+\.\d+)"',
+]
+version_source = "tag"
+commit_version_number = true
+patch_without_tag = true
+build_command = "poetry build"
+upload_to_pypi = false
+check_build_status = true
