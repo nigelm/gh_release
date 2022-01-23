@@ -20,7 +20,7 @@ build-backend = "poetry.core.masonry.api"
 gh_release = "gh_release.cli:gh_release"
 
 [tool.semantic_release]
-branch = "master"
+branch = "main"
 version_toml = [ "pyproject.toml:tool.poetry.version" ]
 version_pattern = [
     'README.md:Version: `(\d+\.\d+\.\d+)`',
