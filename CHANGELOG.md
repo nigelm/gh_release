@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!--next-version-placeholder-->
 
+## v0.2.1 (2022-01-24)
+### Fix
+* Put cache back ([`498d0c5`](https://github.com/nigelm/gh_release/commit/498d0c5486f1341baff1596bb14fd85d792d98f5))
+* Find out where poetry puts things ([`1dc02ac`](https://github.com/nigelm/gh_release/commit/1dc02ac01bf7d11b342b8416a67a7d88a02ac272))
+* Correct some venv issues ([`668b894`](https://github.com/nigelm/gh_release/commit/668b894dd3a701f86f2b5714d253048f16d78a09))
+* Move venv to make it cache correctly ([`054b592`](https://github.com/nigelm/gh_release/commit/054b592711919fe32bfd21bbd3499b7fcf99643e))
+
 ## v0.2.0 (2022-01-24)
 ### Feature
 * Github upload of release package ([`ae314e6`](https://github.com/nigelm/gh_release/commit/ae314e671896a4cc4e770dc986c301800698e3a5))
