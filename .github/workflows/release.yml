@@ -32,6 +32,10 @@ jobs:
           virtualenvs-create: true
           virtualenvs-in-project: false
           virtualenvs-path: ~/poetry-venv
+      - name: Check Poetry
+        run: |
+          poetry config --list
+          poetry env info
       #----------------------------------------------
       #       load cached venv if cache exists
       #----------------------------------------------
