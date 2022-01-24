@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!--next-version-placeholder-->
 
+## v0.2.4 (2022-01-24)
+### Fix
+* Attempt to dual cache with simplification ([`dfa16c9`](https://github.com/nigelm/gh_release/commit/dfa16c9432a1bfde21ea68b5ba24ed9c09a04810))
+
 ## v0.2.3 (2022-01-24)
 ### Fix
 * It appears only one active cache works... ([`c0b26d2`](https://github.com/nigelm/gh_release/commit/c0b26d29790fcf2d27c601f2959f443dc16a65a7))
