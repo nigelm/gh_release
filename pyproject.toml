@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "gh_release"
-version = "0.1.2"
+version = "0.2.0"
 description = ""
 authors = ["Nigel Metheringham <nigel.metheringham@gmail.com>"]
 

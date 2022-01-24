@@ -6,6 +6,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!--next-version-placeholder-->
 
+## v0.2.0 (2022-01-24)
+### Feature
+* Github upload of release package ([`ae314e6`](https://github.com/nigelm/gh_release/commit/ae314e671896a4cc4e770dc986c301800698e3a5))
+
+### Fix
+* Turn check_build_status off ([`42552c0`](https://github.com/nigelm/gh_release/commit/42552c0d439792563542c140e0f61284685157af))
+* Modify build parameters ([`f60ca7d`](https://github.com/nigelm/gh_release/commit/f60ca7de1fc99e85d045fcda4e952f988151ce4e))
+* Try changing poetry path ([`e74567d`](https://github.com/nigelm/gh_release/commit/e74567dcf0e2a2267b122c283eff544f6909069d))
+* Another attempt... ([`8810337`](https://github.com/nigelm/gh_release/commit/88103379986524daa154aeb0b4198ab232d3aa91))
+* Another attempt to handle build within python-smantic-release ([`89aa02a`](https://github.com/nigelm/gh_release/commit/89aa02a9ff42346e80e28c3145f430e0ed83bbfd))
+
 ## v0.1.2 (2022-01-23)
 ### Fix
 * Fix github token name ([`837fc2f`](https://github.com/nigelm/gh_release/commit/837fc2fc114d52ea667050bae0ca6a52836dd278))
