@@ -30,8 +30,7 @@ jobs:
         with:
           version: 1.1.12
           virtualenvs-create: true
-          virtualenvs-in-project: false
-          virtualenvs-path: ~/poetry-venv
+          virtualenvs-in-project: true
       - name: Check Poetry
         run: |
           poetry config --list
@@ -43,7 +42,7 @@ jobs:
         id: cached-poetry-dependencies
         uses: actions/cache@v2
         with:
-          path: ~/poetry-venv
+          path: .venv
           key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('**/poetry.lock') }}
       #----------------------------------------------
       # install/activate dependencies
@@ -58,9 +57,12 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          source ~/poetry-venv/bin/activate
+          source .venv/bin/activate
           git config user.name github-actions
           git config user.email github-actions@github.com
           semantic-release publish
+
+      - name: Size cache
+        run: du -sh .venv
 
 # end
