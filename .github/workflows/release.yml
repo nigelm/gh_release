@@ -38,7 +38,7 @@ jobs:
         id: cached-poetry-dependencies
         uses: actions/cache@v2
         with:
-          path: ~/gh_release/.venv
+          path: .venv
           key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('**/poetry.lock') }}
       #----------------------------------------------
       # install/activate dependencies
@@ -59,9 +59,10 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           pwd
+          echo ~/.venv
           source .venv/bin/activate
           git config user.name github-actions
           git config user.email github-actions@github.com
-          semantic-release publish --debug
+          semantic-release publish --verbosity=DEBUG
 
 # end
