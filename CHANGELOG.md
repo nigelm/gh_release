@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!--next-version-placeholder-->
 
+## v0.2.2 (2022-01-24)
+### Fix
+* Perturb cache key ([`ec27a96`](https://github.com/nigelm/gh_release/commit/ec27a9603f5a5734e86766006dc837d1b38d0dbd))
+
 ## v0.2.1 (2022-01-24)
 ### Fix
 * Put cache back ([`498d0c5`](https://github.com/nigelm/gh_release/commit/498d0c5486f1341baff1596bb14fd85d792d98f5))
