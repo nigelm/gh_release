@@ -28,10 +28,10 @@ version_pattern = [
 ]
 version_source = "tag"
 commit_version_number = true
-patch_without_tag = true
-build_command = ""
+patch_without_tag = false
+build_command = "poetry build"
 upload_to_pypi = false
-check_build_status = false
-upload_to_repository = false
+check_build_status = true
+upload_to_repository = true
 
 # end
