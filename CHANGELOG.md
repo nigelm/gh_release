@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!--next-version-placeholder-->
 
+## v0.3.0 (2022-01-24)
+### Feature
+* Try to move setup phase into its own workflow ([`3cfe119`](https://github.com/nigelm/gh_release/commit/3cfe1190a7e020d54ec994a1af15627724394f92))
+
+### Fix
+* Rework setup code into a separate action ([`13b2e3a`](https://github.com/nigelm/gh_release/commit/13b2e3ac83c1cda0432442eec1a977fc0ac48cc4))
+
 ## v0.2.4 (2022-01-24)
 ### Fix
 * Attempt to dual cache with simplification ([`dfa16c9`](https://github.com/nigelm/gh_release/commit/dfa16c9432a1bfde21ea68b5ba24ed9c09a04810))
