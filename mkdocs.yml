@@ -1,0 +1,46 @@
+site_name: gh_release
+site_description: "Automatic documentation from sources, for MkDocs."
+site_url: "https://nigelm.github.io/gh_release/"
+repo_url: "https://github.com/nigelm/gh_release"
+repo_name: "nigelm/gh_release"
+
+nav:
+  - Overview: index.md
+  - Usage: usage.md
+  - API Reference:
+    - CLI: api/cli.md
+  - Changelog: changelog.md
+  - License: license.md
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.expand
+
+extra_css:
+  - css/mkdocstrings.css
+
+markdown_extensions:
+  - pymdownx.highlight:
+      linenums_style: pymdownx.inline
+  - pymdownx.magiclink
+  - pymdownx.superfences
+  - markdown_include.include
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          rendering:
+            show_source: true
+          selection:
+            new_path_syntax: yes
+            #filters:
+            #  - "!^_"  # exlude all members starting with _
+            #  - "^__init__$"  # but always include __init__ modules and methods
+      watch:
+        - gh_release
+# end
