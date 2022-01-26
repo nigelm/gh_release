@@ -1,0 +1,23 @@
+# basic set of tests
+name: Deploy
+on:
+  push:
+    branches:
+      - 'main'
+    tags:
+      - v**
+
+jobs:
+  test:
+    uses: nigelm/gh_release/.github/workflows/_test.yml@main
+
+  upload:
+    needs: test
+    uses: nigelm/gh_release/.github/workflows/_upload.yml@main
+
+  docs:
+    needs: test
+    uses: nigelm/gh_release/.github/workflows/_docs.yml@main
+
+
+# end

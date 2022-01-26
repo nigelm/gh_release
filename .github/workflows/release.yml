@@ -1,9 +1,13 @@
 name: Overall Release Process
 on: workflow_dispatch
 jobs:
+  full_test:
+    uses: nigelm/gh_release/.github/workflows/_full_tests.yml@main
+
   release:
     runs-on: ubuntu-latest
     concurrency: release
+    needs: full_test
 
     steps:
       - name: Set up repository
