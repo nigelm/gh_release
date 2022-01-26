@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!--next-version-placeholder-->
 
+## v0.4.1 (2022-01-26)
+### Fix
+* Correct post release process in CI ([`adef879`](https://github.com/nigelm/gh_release/commit/adef879b58414e0a76b9f9d6024b059053896936))
+
 ## v0.4.0 (2022-01-26)
 ### Feature
 * Full lifecycle github actions ([`eed6957`](https://github.com/nigelm/gh_release/commit/eed6957eecde5e70d2eaf30c7c460214a03e2a7f))
