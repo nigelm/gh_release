@@ -11,6 +11,7 @@ jobs:
   upload:
     name: Upload To Pypi
     runs-on: ubuntu-latest
+    environment: deployment
     steps:
       - name: Set up repository
         uses: nigelm/gh_actions_python_poetry_setup@v1

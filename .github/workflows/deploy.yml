@@ -14,6 +14,8 @@ jobs:
   upload:
     needs: test
     uses: nigelm/gh_release/.github/workflows/_upload.yml@main
+    secrets:
+      PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
 
   docs:
     needs: test
