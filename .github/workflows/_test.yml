@@ -16,6 +16,6 @@ jobs:
           fetch-depth: 0
 
       - name: Run tests
-        run: make tests
+        run: make test
 
 # end
