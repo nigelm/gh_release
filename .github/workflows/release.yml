@@ -29,4 +29,18 @@ jobs:
           git config user.email github-actions@github.com
           poetry run semantic-release publish
 
+  post_release_test:
+    needs: release
+    uses: nigelm/gh_release/.github/workflows/_test.yml@main
+
+  upload:
+    needs: post_release_test
+    uses: nigelm/gh_release/.github/workflows/_upload.yml@main
+    secrets:
+      PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
+
+  docs:
+    needs: post_release_test
+    uses: nigelm/gh_release/.github/workflows/_docs.yml@main
+
 # end
