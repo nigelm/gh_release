@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!--next-version-placeholder-->
 
+## v0.4.2 (2022-01-26)
+### Fix
+* Move the post release inline so sees the updated code ([`a361512`](https://github.com/nigelm/gh_release/commit/a361512106792c5fff12ab095163c3db4569003e))
+
 ## v0.4.1 (2022-01-26)
 ### Fix
 * Correct post release process in CI ([`adef879`](https://github.com/nigelm/gh_release/commit/adef879b58414e0a76b9f9d6024b059053896936))
