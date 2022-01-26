@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     concurrency: release
     needs: full_test
+    environment: deployment
 
     steps:
       - name: Set up repository
@@ -29,18 +30,18 @@ jobs:
           git config user.email github-actions@github.com
           poetry run semantic-release publish
 
-  post_release_test:
-    needs: release
-    uses: nigelm/gh_release/.github/workflows/_test.yml@main
+      - name: run post release test
+        run:  make test
 
-  upload:
-    needs: post_release_test
-    uses: nigelm/gh_release/.github/workflows/_upload.yml@main
-    secrets:
-      PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
+      - name: upload release
+        run: poetry config repositories.test-pypi https://test.pypi.org/legacy/
+      - run: poetry config pypi-token.test-pypi ${{ secrets.PYPI_TOKEN }}
+      - run: poetry publish --build --repository test-pypi
 
-  docs:
-    needs: post_release_test
-    uses: nigelm/gh_release/.github/workflows/_docs.yml@main
+      - name: Setup Git Commit Info
+        run:  git config user.name 'github-actions[bot]' && git config user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Publish docs
+        run:  poetry run mkdocs gh-deploy
 
 # end
