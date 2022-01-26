@@ -29,6 +29,8 @@ version_toml = [ "pyproject.toml:tool.poetry.version" ]
 version_pattern = [
     'README.md:Version: `(\d+\.\d+\.\d+)`',
     'gh_release/__init__.py:__version__ = "(\d+\.\d+\.\d+)"',
+    'tests/test_cli.py:assert "version (\d+\.\d+\.\d+)"',
+    'tests/test_gh_release.py:__version__ == "(\d+\.\d+\.\d+)"',
 ]
 version_source = "tag"
 commit_version_number = true
