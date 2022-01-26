@@ -22,4 +22,4 @@ def test_cli_version():
     """Test the CLI."""
     version_result = runner.invoke(app, ["--version"])
     assert version_result.exit_code == 0
-    assert "version 0.3.0" in version_result.output
+    assert "version 0.4.0" in version_result.output

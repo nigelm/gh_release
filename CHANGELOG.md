@@ -6,6 +6,19 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!--next-version-placeholder-->
 
+## v0.4.0 (2022-01-26)
+### Feature
+* Full lifecycle github actions ([`eed6957`](https://github.com/nigelm/gh_release/commit/eed6957eecde5e70d2eaf30c7c460214a03e2a7f))
+
+### Fix
+* Filter on deploy ci ([`d54663b`](https://github.com/nigelm/gh_release/commit/d54663b98d257dcc84c87a3f3b783f9a74931dca))
+* Deployment secrets ([`9bfaa07`](https://github.com/nigelm/gh_release/commit/9bfaa077ea6dc5b6c6b68920817827219a0859a5))
+* Correct ci tests ([`3f87b67`](https://github.com/nigelm/gh_release/commit/3f87b6784b5432d9ebe2ab68b4ed46a06b9b10cb))
+* Correct tests version checking ([`44d2e95`](https://github.com/nigelm/gh_release/commit/44d2e9525e6e71ef2eaf313d1fa2df83fa4f1757))
+
+### Documentation
+* Added a set of fake filler documentation ([`f473306`](https://github.com/nigelm/gh_release/commit/f4733065aba6ad2c12de833d47795ad56adb4ea9))
+
 ## v0.3.0 (2022-01-24)
 ### Feature
 * Try to move setup phase into its own workflow ([`3cfe119`](https://github.com/nigelm/gh_release/commit/3cfe1190a7e020d54ec994a1af15627724394f92))
