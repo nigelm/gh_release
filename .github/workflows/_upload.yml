@@ -2,8 +2,8 @@ name: Upload To Pypi
 
 on:
   workflow_call:
-    inputs:
-      pypi-token:
+    secrets:
+      PYPI_TOKEN:
         description: The pypi token to use for authentication
         required: true
 
@@ -20,7 +20,7 @@ jobs:
           fetch-depth: 0
 
       - run: poetry config repositories.test-pypi https://test.pypi.org/legacy/
-      - run: poetry config pypi-token.test-pypi ${{ inputs.pypi-token }}
+      - run: poetry config pypi-token.test-pypi ${{ secrets.PYPI_TOKEN }}
       - run: poetry publish --build --repository test-pypi
 
 # end
