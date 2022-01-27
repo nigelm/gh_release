@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!--next-version-placeholder-->
 
+## v0.6.0 (2022-01-27)
+### Feature
+* Add linting to test and release workflows ([`d2cddbe`](https://github.com/nigelm/gh_release/commit/d2cddbe61ce4ddf073f7ac56c689e92c053415ed))
+
+### Fix
+* Put linters back again ([`75f440a`](https://github.com/nigelm/gh_release/commit/75f440a84eb5ca66c6a7ab9acf69436a14307286))
+* Do not run test on tagged release set ([`8a83b96`](https://github.com/nigelm/gh_release/commit/8a83b960f8049ab7de633d783fb20f61fcc45dd3))
+* Fix the page generation process - requires git history ([`3d45fde`](https://github.com/nigelm/gh_release/commit/3d45fdecaf896d275e72cfa3163f116a66070076))
+
 ## v0.5.0 (2022-01-27)
 ### Feature
 * Rework the post release process ([`546de45`](https://github.com/nigelm/gh_release/commit/546de4562b2b4b85cb1ec3b249925e1cc3bed4f9))
