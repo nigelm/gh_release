@@ -13,7 +13,6 @@ jobs:
         with:
           python-version: 3.10.2
           poetry-version: 1.1.12
-          fetch-depth: 0
 
       - name: Run tests
         run: make test
