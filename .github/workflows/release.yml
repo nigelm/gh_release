@@ -1,7 +1,12 @@
 name: Overall Release Process
 on: workflow_dispatch
 jobs:
+  tests:
+    uses: nigelm/gh_release/.github/workflows/_test.yml@main
+  lint:
+    uses: nigelm/gh_release/.github/workflows/_linting.yml@main
   full_test:
+    needs: [tests, lint]
     uses: nigelm/gh_release/.github/workflows/_full_tests.yml@main
 
   release:

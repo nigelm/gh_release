@@ -8,15 +8,17 @@ on:
 jobs:
   test:
     uses: nigelm/gh_release/.github/workflows/_test.yml@main
+  lint:
+    uses: nigelm/gh_release/.github/workflows/_linting.yml@main
 
   upload:
-    needs: test
+    needs: [tests, lint]
     uses: nigelm/gh_release/.github/workflows/_upload.yml@main
     secrets:
       PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
 
   docs:
-    needs: test
+    needs: [tests, lint]
     uses: nigelm/gh_release/.github/workflows/_docs.yml@main
 
 

@@ -55,4 +55,8 @@ dist: clean ## builds source and wheel package
 	poetry build
 	ls -l dist
 
+.PHONY: lint
+lint: ## run linters - these are all within pre-commit
+	poetry run pre-commit run -a
+
 # end
