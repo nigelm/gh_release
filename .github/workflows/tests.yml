@@ -1,14 +1,9 @@
 # basic set of tests
 name: Tests
-on:
-  push:
-    tags-ignore:
-      - v*
+on: push
 
 jobs:
   tests:
     uses: nigelm/gh_release/.github/workflows/_test.yml@main
-  lint:
-    uses: nigelm/gh_release/.github/workflows/_linting.yml@main
 
 # end
