@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://nigelm.github.io/gh_release/</loc>
-         <lastmod>2022-01-26</lastmod>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nigelm.github.io/gh_release/changelog/</loc>
-         <lastmod>2022-01-26</lastmod>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nigelm.github.io/gh_release/license/</loc>
-         <lastmod>2022-01-26</lastmod>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nigelm.github.io/gh_release/usage/</loc>
-         <lastmod>2022-01-26</lastmod>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nigelm.github.io/gh_release/api/cli/</loc>
-         <lastmod>2022-01-26</lastmod>
+         <lastmod>2022-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
