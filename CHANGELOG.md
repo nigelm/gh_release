@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!--next-version-placeholder-->
 
+## v0.6.1 (2022-01-27)
+### Fix
+* Tweak job order for caching efficiency ([`e64b092`](https://github.com/nigelm/gh_release/commit/e64b092dc874dea4165cb88a6c8f0e53c733cd60))
+* Update dependency ([`6c36ccc`](https://github.com/nigelm/gh_release/commit/6c36ccc35af2535df0108d00273b709945c4313e))
+* Corrected ci syntax ([`aa99cf4`](https://github.com/nigelm/gh_release/commit/aa99cf413a65af684e379b24101c584ca20b8e2e))
+
 ## v0.6.0 (2022-01-27)
 ### Feature
 * Add linting to test and release workflows ([`d2cddbe`](https://github.com/nigelm/gh_release/commit/d2cddbe61ce4ddf073f7ac56c689e92c053415ed))
