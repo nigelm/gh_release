@@ -39,5 +39,6 @@ jobs:
         run: |
           source ~/venv/bin/activate
           pre-commit run --all-files
+        shell: bash
 
 # end
