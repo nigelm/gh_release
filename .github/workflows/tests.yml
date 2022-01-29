@@ -6,8 +6,6 @@ jobs:
   lint:
     uses: nigelm/gh_release/.github/workflows/_linting.yml@main
   tests:
-    # we force this dependency because it better heats the cache
-    needs: lint
     uses: nigelm/gh_release/.github/workflows/_test.yml@main
 
 # end
