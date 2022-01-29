@@ -4,8 +4,8 @@ on: push
 
 jobs:
   lint:
-    uses: nigelm/gh_release/.github/workflows/_linting.yml@main
+    uses: ./.github/workflows/_linting.yml
   tests:
-    uses: nigelm/gh_release/.github/workflows/_test.yml@main
+    uses: ./.github/workflows/_test.yml
 
 # end
